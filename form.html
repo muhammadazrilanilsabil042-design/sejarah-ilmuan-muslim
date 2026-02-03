@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="A-UX-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width,initial scale=1.0">
+    <title>sejarah ilmuan muslim Al-khawarizmi</title>
+        <style>
+            /* bagian form html */
+            @media screen and (max-width: 600px)
+            {
+                /*kode aside dan article yang sudah sukses */
+                aside,article {
+                    float: none;
+                    width: 100%;
+                }
+                /*tambahkan kode form di bawahnya sini */
+                input, textarea, select {
+                    width: 100% !important;
+                    display: block;
+                    margin-bottom: 10px;
+                    box-sizing: border-box;
+                    padding: 8px;
+                    margin-bottom: 10px;
+                }
+            /*--- hapus tanda { di sini ---*/
+            
+            /*masukkan kode radio di sini */
+        }
+         /* pindahkan tanda tutup disini */
+            
+        
+            .gender-container{
+                display:flex !important; /*biar sejajar ke samping */
+                gap: 20px; /*kasih jarak antara laki-laki dan perempuan */
+                margin-top: 10px;
+            }
+
+            .radio-item {
+                display: flex !important;
+                align-items: center !important; /*agar bulatan dab teks lurus sejajar */
+                justify-content: flex-start !important; /* agar tetap di kiri saja */
+                gap: 10px ;
+                margin-bottom: 5px;
+            }
+        
+        </style>
+</head>
+<body>
+    <nav id="menu">
+        <a href="penulis.html">Penulis</a> |
+        <a href="index.html">Article</a> |
+        <a href="form.html">pesan dan kesan anda</a> |
+    </nav>
+    <hr style="border-width: 3px;border-style: double;"/>
+    <main id="utama">
+        <form action="form.php" method="post">
+            <fieldset>
+                <legend>pesan dan kesan anda</legend>
+                <p>
+                    <label for="username">username:</label><br />
+                    <input type="text" name="username" placeholder="your username..." required="true"/>
+                </p>
+                <p>
+                    <label for="email">email:</label><br />
+                    <input type="email" name="email" placeholder="your email..." required="true" />
+                </p>
+                <p>
+                    
+                    <label>Jenis kelamin:</label><br />
+                    <div class="gender-container">
+                        <div class="radio-item">
+                            <label><input type="radio" name="jenis_kelamin" value="laki-laki">laki-laki</label>
+                        </div>
+                        <div class="radio-item">
+                            <label><input type="radio" name="Jenis_kelamin" value="perempuan">Perempuan</label>
+                        </div>
+                    </div>
+
+                </p>
+                <p>
+                    <label>Agama anda:</label><br />
+                    <select name="agama" required="true">
+                        <option value="pilih agama anda...">pilih agama anda...</option>
+                        <option value="Islam">Islam</option>
+                        <option value="Kristen">Kristen</option>
+                        <option value="Budha">Budha</option>
+                        <option value="Hindu">Hindu</option>
+                        <option value="Konghucu">konghucu</option>
+                    </select>
+                </p>
+                <p>
+                    <label>umur:</label><br />
+                    <input type="number" min="10" max="90" name="umur" required="true" />
+                </p>
+                <p>
+                    <label>Tanggal Lahir:</label><br />
+                    <input type="date" name="tanggal lahir" required="true" />
+                </p>
+                <p>
+                    <label for="meesege">pesan/kesan anda:</label><br />
+                    <textarea name="meesege" placeholder="pesan anda..." rows="5" cols="90" required="true"></textarea>
+                </p>
+                <p>
+                    <input type="submit" name="kirim" value="kirim" required="true" />
+                </p>
+            </fieldset>
+        </form>
+        <hr style="border-width: 3px;border-style: double;"/>
+        <article id="konten paragraf">
+            <p style="font-family: sans-serif; text-align: center;
+                text-align:justify; text-justify: inter-word; line-height: 1.6;
+                max-width: 800px; margin: 20px auto;">
+                terima kasih anda sudah mengisi form ini saya berharap anda suka
+                dengan artikel saya ini ya, dan semoga artikel ini dapat menambah
+                wawasan anda dan ilmu pengetahuan anda ya ,terima kasih user karna
+                sudah membaca artikel saya, tunggu saja ya kelanjutan dari artikel
+                saya selanjutnya dan saya akan berusaha memberikan yang terbaik
+                bagi <strong><ins>user yang telah membaca artikel saya.</ins></strong> 
+                terima kasih
+                sampai ketemu lagi.
+            </p>
+        </article>
+    </main>
+    <hr style="border-width: 3px;border-style: double;"/>
+    <footer style="text-align: center;">
+        <p> Copyright &copy; 2026 Muhammad Azril.All Right reserved.</p>
+    </footer>
+</body>
+</html>
